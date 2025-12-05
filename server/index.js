@@ -16,9 +16,13 @@ const app = express();
 // Database
 connectDB();
 
+// CORS (Fixed)
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: [
+      process.env.FRONTEND_URL,   // https://e-learnig-bd.onrender.com
+      "http://localhost:5173",     // Dev mode
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -26,7 +30,7 @@ app.use(
 );
 
 // Parsers
-app.use(express.json());
+app.use(express.json({ limit: "50mb" }));
 app.use(cookieParser());
 
 // Routes
@@ -39,3 +43,5 @@ app.use("/api/v1/progress", coureProgressRoute);
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+
+

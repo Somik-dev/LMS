@@ -1,0 +1,21 @@
+https://youtu.be/JMvWrx_rLw4?si=Rngn2yFfeuWb69tR
+
+passoword
+12345
+
+news portal
+https://youtu.be/0kY6ahh0OLI?si=6xSfS1bcCJqkoUKA
+
+Text Editor in mern
+npm install react-quill-new
+
+
+github 
+https://github.com/Surendrakumarpatel/lms_patelmernstack
+
+stripe
+stripe listen --forward-to http://localhost:8080/api/v1/purchase/webhook
+
+
+category 
+https://chatgpt.com/share/6863734a-a1a0-8004-9b13-9073480f160d
